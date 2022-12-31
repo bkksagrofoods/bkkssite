@@ -371,6 +371,22 @@
   </div>  
 </section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/popper/popper.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/viewportchecker/viewportchecker.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
+<script>
+//Disable
+
+            window.oncontextmenu = function () {
+                        return false;
+                    }
+                    $(document).keydown(function (event) {
+                        if (event.keyCode == 123) {
+                            return false;
+                        }
+                        else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                            return false;
+                        }
+                    });
+
+</script>  
   
 </div>
   </body>
